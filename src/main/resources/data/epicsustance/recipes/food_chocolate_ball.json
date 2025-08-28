@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+  	" C ",
+    "CSC",
+    " C "
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "epicsustance:food_chocolate_chip"
+    },
+    "S":
+    {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result":
+  {
+    "item": "epicsustance:food_chocolate_ball",
+    "count": 1
+  }
+}

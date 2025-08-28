@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "epicsustance:item_joint"
+    },
+    {
+      "item": "epicsustance:item_heroin_syringe"
+    }
+  ],
+  "result":
+  {
+    "item": "epicsustance:item_heroin_joint",
+    "count": 1
+  }
+}

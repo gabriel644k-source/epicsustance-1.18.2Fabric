@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "epicsustance:food_muffin"
+    },
+    {
+      "item": "epicsustance:drug_weed"
+    }
+  ],
+  "result":
+  {
+    "item": "epicsustance:drug_muffin",
+    "count": 1
+  }
+}

@@ -2,6 +2,12 @@ package com.g2806.epicsustance.init;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.FoodComponent;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.entity.effect.StatusEffects;
@@ -105,6 +111,14 @@ public class ItemRegistry {
         new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
     public static final Item ITEM_OPIUM_PIPE = registerItem("item_pipe_opium", 
         new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
+
+    // Armor Material
+    public static final ArmorMaterial DOPE_ARMOR_MATERIAL = new DopeArmorMaterial();
+    
+    // Armor Items
+    public static final ArmorItem DOPE_HELMET = registerItem("dope_helmet", 
+        new ArmorItem(DOPE_ARMOR_MATERIAL, EquipmentSlot.HEAD, 
+        new Item.Settings().group(Epicsustance.DRUG_TAB)));
 
     private static <T extends Item> T registerItem(String name, T item) {
         return Registry.register(Registry.ITEM, new Identifier(Epicsustance.MOD_ID, name), item);

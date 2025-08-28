@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+  	"IQI",
+    "QNQ",
+    "IQI"
+  ],
+  "key":
+  {
+    "Q":
+    {
+      "item": "minecraft:quartz"
+    },
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "N":
+    {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result":
+  {
+    "item": "epicsustance:drug_farmer",
+    "count": 1
+  }
+}
