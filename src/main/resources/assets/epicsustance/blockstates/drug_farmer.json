@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "epicsustance:block/drug_farmer" }
+  }
+}
