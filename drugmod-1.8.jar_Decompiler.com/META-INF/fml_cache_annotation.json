@@ -1,0 +1,150 @@
+{
+  "drugmod/Main": {
+    "name": "drugmod/Main",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "drugmod/Main",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "modid": {
+            "value": "drugmod"
+          },
+          "name": {
+            "value": "Drug Mod"
+          },
+          "version": {
+            "value": "1.8"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "drugmod.Proxy.ClientProxy"
+          },
+          "serverSide": {
+            "value": "drugmod.Proxy.CommonProxy"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "Init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "ClientInit(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      }
+    ]
+  },
+  "drugmod/Stuff/Class/ArmorBase": {
+    "name": "drugmod/Stuff/Class/ArmorBase",
+    "interfaces": [
+      "drugmod/Stuff/IHasModel"
+    ]
+  },
+  "drugmod/Stuff/Class/BlockBase": {
+    "name": "drugmod/Stuff/Class/BlockBase",
+    "interfaces": [
+      "drugmod/Stuff/IHasModel"
+    ]
+  },
+  "drugmod/Stuff/Class/FoodItem": {
+    "name": "drugmod/Stuff/Class/FoodItem",
+    "interfaces": [
+      "drugmod/Stuff/IHasModel"
+    ]
+  },
+  "drugmod/Stuff/Class/GrassBlockColor": {
+    "name": "drugmod/Stuff/Class/GrassBlockColor",
+    "interfaces": [
+      "net/minecraft/client/renderer/color/IBlockColor"
+    ]
+  },
+  "drugmod/Stuff/Class/GrassItemColor": {
+    "name": "drugmod/Stuff/Class/GrassItemColor",
+    "interfaces": [
+      "net/minecraft/client/renderer/color/IItemColor"
+    ]
+  },
+  "drugmod/Stuff/Class/ItemBase": {
+    "name": "drugmod/Stuff/Class/ItemBase",
+    "interfaces": [
+      "drugmod/Stuff/IHasModel"
+    ]
+  },
+  "drugmod/Stuff/Configuration": {
+    "name": "drugmod/Stuff/Configuration",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/common/config/Config;",
+        "target": "drugmod/Stuff/Configuration",
+        "values": {
+          "modid": {
+            "value": "drugmod"
+          },
+          "name": {
+            "value": "drugmod"
+          },
+          "type": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/common/config/Config$Type;/INSTANCE"
+          }
+        }
+      }
+    ]
+  },
+  "drugmod/Stuff/DrugClass/DrugHelper": {
+    "name": "drugmod/Stuff/DrugClass/DrugHelper",
+    "interfaces": [
+      "drugmod/Stuff/IHasModel"
+    ]
+  },
+  "drugmod/Stuff/DrugClass/DrugSeed": {
+    "name": "drugmod/Stuff/DrugClass/DrugSeed",
+    "interfaces": [
+      "drugmod/Stuff/IHasModel",
+      "net/minecraftforge/common/IPlantable"
+    ]
+  },
+  "drugmod/Stuff/RegistryHandler": {
+    "name": "drugmod/Stuff/RegistryHandler",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "drugmod/Stuff/RegistryHandler"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onItemRegister(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onBlockRegister(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onModelRegister(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V"
+      }
+    ]
+  }
+}

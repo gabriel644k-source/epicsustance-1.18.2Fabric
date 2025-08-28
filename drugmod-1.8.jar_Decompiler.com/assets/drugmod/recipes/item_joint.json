@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "drugmod:drug_weed"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result":
+  {
+    "item": "drugmod:item_joint",
+    "count": 1
+  }
+}

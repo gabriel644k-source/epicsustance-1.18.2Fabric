@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "drugmod:item_mortar"
+    },
+    {
+      "item": "drugmod:item_pestle"
+    }
+  ],
+  "result":
+  {
+    "item": "drugmod:item_grinder",
+    "count": 1
+  }
+}

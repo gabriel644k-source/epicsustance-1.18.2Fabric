@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+  	" S ",
+    "PBP",
+    " P "
+  ],
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:bread"
+    },
+    "S":
+    {
+      "item": "minecraft:sugar"
+    },
+    "P":
+    {
+      "item": "minecraft:paper"
+    }
+  },
+  "result":
+  {
+    "item": "drugmod:food_muffin",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+  	"GDG"
+  ],
+  "key":
+  {
+    "G":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "D":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result":
+  {
+    "item": "drugmod:dope_helmet",
+    "count": 1
+  }
+}

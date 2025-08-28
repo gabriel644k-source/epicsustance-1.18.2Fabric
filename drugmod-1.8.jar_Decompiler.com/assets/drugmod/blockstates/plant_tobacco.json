@@ -1,0 +1,13 @@
+{
+  "variants":
+  {
+    "age=0": { "model":  "drugmod:plant_tobacco_1" },
+    "age=1": { "model":  "drugmod:plant_tobacco_1" },
+    "age=2": { "model":  "drugmod:plant_tobacco_2" },
+    "age=3": { "model":  "drugmod:plant_tobacco_2" },
+    "age=4": { "model":  "drugmod:plant_tobacco_3" },
+    "age=5": { "model":  "drugmod:plant_tobacco_3" },
+    "age=6": { "model":  "drugmod:plant_tobacco_4" },
+    "age=7": { "model":  "drugmod:plant_tobacco_4" }
+  }
+}

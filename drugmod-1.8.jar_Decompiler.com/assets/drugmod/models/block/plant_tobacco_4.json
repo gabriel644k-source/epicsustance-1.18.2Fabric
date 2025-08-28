@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "drugmod:blocks/plant_tobacco_4"
+    }
+}

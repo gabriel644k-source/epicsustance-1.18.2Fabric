@@ -1,0 +1,34 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "drugmod:blocks/drug_farmer",
+    "down": "drugmod:blocks/drug_farmer",
+    "up": "drugmod:blocks/drug_farmer_top",
+    "north": "drugmod:blocks/drug_farmer",
+    "east": "drugmod:blocks/drug_farmer",
+    "south": "drugmod:blocks/drug_farmer",
+    "west": "drugmod:blocks/drug_farmer",
+    "overlay": "minecraft:blocks/grass_top"
+  },
+  "elements": [
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "up": { "texture": "#overlay", "tintindex": 0 },
+        "down": { "texture": "#down" },
+        "north": { "texture": "#north" },
+        "south": { "texture": "#south" },
+        "east": { "texture": "#east" },
+        "west": { "texture": "#west" }
+      }
+    },
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "up": { "texture": "#up" }
+      }
+    }
+  ]
+}

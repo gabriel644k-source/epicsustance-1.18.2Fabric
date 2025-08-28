@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "drugmod:item_joint"
+    },
+    {
+      "item": "drugmod:item_heroin_syringe"
+    }
+  ],
+  "result":
+  {
+    "item": "drugmod:item_heroin_joint",
+    "count": 1
+  }
+}
