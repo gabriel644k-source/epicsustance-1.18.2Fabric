@@ -17,6 +17,8 @@ import com.g2806.epicsustance.Epicsustance;
 import com.g2806.epicsustance.item.DrugItem;
 import com.g2806.epicsustance.item.DrugFood;
 import com.g2806.epicsustance.item.DrugSeed;
+import com.g2806.epicsustance.item.DrugHelper;
+import com.g2806.epicsustance.item.DrugInjectable;
 
 public class ItemRegistry {
     
@@ -31,9 +33,9 @@ public class ItemRegistry {
         new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
     public static final Item ITEM_MORPHINE_SYRINGE = registerItem("item_morphine_syringe", 
         new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
-    public static final DrugItem ITEM_HEROIN_SYRINGE = registerItem("item_heroin_syringe", 
-        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB), 
-        new StatusEffectInstance(StatusEffects.NAUSEA, 100)));
+    public static final DrugInjectable ITEM_HEROIN_SYRINGE = registerItem("item_heroin_syringe", 
+        new DrugInjectable(new Item.Settings().group(Epicsustance.DRUG_TAB),
+        new StatusEffectInstance(StatusEffects.SPEED, 100)));
     
     public static final DrugSeed SEED_WEED = registerItem("seed_weed", 
         new DrugSeed(BlockRegistry.PLANT_WEED, new Item.Settings().group(Epicsustance.DRUG_TAB)));
@@ -53,14 +55,18 @@ public class ItemRegistry {
     public static final Item ITEM_OPIUM = registerItem("item_opium", 
         new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
     
-    public static final Item DRUG_WEED = registerItem("drug_weed", 
-        new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
-    public static final Item DRUG_COCAINE = registerItem("drug_cocaine", 
-        new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
-    public static final Item DRUG_TOBACCO = registerItem("drug_tobacco", 
-        new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
-    public static final Item DRUG_OPIUM = registerItem("drug_opium", 
-        new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
+    public static final DrugItem DRUG_WEED = registerItem("drug_weed", 
+        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB),
+        new StatusEffectInstance(StatusEffects.REGENERATION, 100)));
+    public static final DrugItem DRUG_COCAINE = registerItem("drug_cocaine", 
+        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB),
+        new StatusEffectInstance(StatusEffects.SPEED, 100)));
+    public static final DrugItem DRUG_TOBACCO = registerItem("drug_tobacco", 
+        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB),
+        new StatusEffectInstance(StatusEffects.SLOWNESS, 100)));
+    public static final DrugItem DRUG_OPIUM = registerItem("drug_opium", 
+        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB),
+        new StatusEffectInstance(StatusEffects.WEAKNESS, 100)));
     
     public static final Item FOOD_CHOCOLATE_CHIP = registerItem("food_chocolate_chip", 
         new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)
@@ -71,6 +77,7 @@ public class ItemRegistry {
     public static final DrugFood WEED_CHOCOLATE_BALL = registerItem("drug_chocolate_ball", 
         new DrugFood(new Item.Settings().group(Epicsustance.DRUG_TAB)
         .food(new FoodComponent.Builder().hunger(4).build()),
+        new StatusEffectInstance(StatusEffects.NAUSEA, 400),
         new StatusEffectInstance(StatusEffects.REGENERATION, 200)));
     
     public static final Item FOOD_MUFFIN = registerItem("food_muffin", 
@@ -79,6 +86,7 @@ public class ItemRegistry {
     public static final DrugFood DRUG_MUFFIN = registerItem("drug_muffin", 
         new DrugFood(new Item.Settings().group(Epicsustance.DRUG_TAB)
         .food(new FoodComponent.Builder().hunger(6).build()),
+        new StatusEffectInstance(StatusEffects.NAUSEA, 400),
         new StatusEffectInstance(StatusEffects.REGENERATION, 200)));
     
     public static final Item FOOD_BROWNIE = registerItem("food_brownie", 
@@ -87,30 +95,38 @@ public class ItemRegistry {
     public static final DrugFood DRUG_BROWNIE = registerItem("drug_brownie", 
         new DrugFood(new Item.Settings().group(Epicsustance.DRUG_TAB)
         .food(new FoodComponent.Builder().hunger(6).build()),
-        new StatusEffectInstance(StatusEffects.SPEED, 200)));
+        new StatusEffectInstance(StatusEffects.NAUSEA, 400),
+        new StatusEffectInstance(StatusEffects.STRENGTH, 200)));
     
     public static final DrugItem ITEM_JOINT = registerItem("item_joint", 
-        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB), 
+        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB),
+        new StatusEffectInstance(StatusEffects.NAUSEA, 200),
         new StatusEffectInstance(StatusEffects.REGENERATION, 100)));
-    public static final DrugItem ITEM_BLUNT = registerItem("item_blunt", 
-        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB), 
+    public static final DrugItem ITEM_BLUNT = registerItem("item_blunt",
+        new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB),
         new StatusEffectInstance(StatusEffects.REGENERATION, 100),
-        new StatusEffectInstance(StatusEffects.SLOWNESS, 100)));
+        new StatusEffectInstance(StatusEffects.NAUSEA, 200),
+        new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 100)));
     public static final DrugItem ITEM_SPLIFF = registerItem("item_spliff", 
         new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB), 
         new StatusEffectInstance(StatusEffects.REGENERATION, 100),
-        new StatusEffectInstance(StatusEffects.SLOWNESS, 100)));
+        new StatusEffectInstance(StatusEffects.NAUSEA, 200),
+        new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 100)));
     public static final DrugItem ITEM_HEROIN_JOINT = registerItem("item_heroin_joint", 
         new DrugItem(new Item.Settings().group(Epicsustance.DRUG_TAB), 
         new StatusEffectInstance(StatusEffects.REGENERATION, 200),
-        new StatusEffectInstance(StatusEffects.NAUSEA, 200)));
+        new StatusEffectInstance(StatusEffects.SPEED, 200),
+        new StatusEffectInstance(StatusEffects.NAUSEA, 400)));
     
-    public static final Item ITEM_STRAW = registerItem("item_straw", 
-        new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
-    public static final Item ITEM_TOBACCO_PIPE = registerItem("item_pipe_tobacco", 
-        new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
-    public static final Item ITEM_OPIUM_PIPE = registerItem("item_pipe_opium", 
-        new Item(new Item.Settings().group(Epicsustance.DRUG_TAB)));
+    public static final DrugHelper ITEM_STRAW = registerItem("item_straw", 
+        new DrugHelper(new Item.Settings().group(Epicsustance.DRUG_TAB), 100, false,
+        new StatusEffectInstance(StatusEffects.STRENGTH, 100)));
+    public static final DrugHelper ITEM_TOBACCO_PIPE = registerItem("item_pipe_tobacco", 
+        new DrugHelper(new Item.Settings().group(Epicsustance.DRUG_TAB), 100, true,
+        new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 100)));
+    public static final DrugHelper ITEM_OPIUM_PIPE = registerItem("item_pipe_opium", 
+        new DrugHelper(new Item.Settings().group(Epicsustance.DRUG_TAB), 100, true,
+        new StatusEffectInstance(StatusEffects.SLOWNESS, 100)));
 
     // Armor Material
     public static final ArmorMaterial DOPE_ARMOR_MATERIAL = new DopeArmorMaterial();
@@ -126,5 +142,10 @@ public class ItemRegistry {
 
     public static void registerItems() {
         Epicsustance.LOGGER.info("Registering items for " + Epicsustance.MOD_ID);
+        
+        // Set required drugs for helper items
+        ITEM_STRAW.setRequiredDrug(DRUG_COCAINE);
+        ITEM_TOBACCO_PIPE.setRequiredDrug(DRUG_TOBACCO);
+        ITEM_OPIUM_PIPE.setRequiredDrug(DRUG_OPIUM);
     }
 }
