@@ -15,7 +15,7 @@ public class DrugInjectable extends Item {
     private final int duration;
 
     public DrugInjectable(Item.Settings settings, StatusEffectInstance... effects) {
-        super(settings.maxCount(1));
+        super(settings); // Remove maxCount(1) to allow stacking
         this.effects = effects;
         this.duration = effects.length > 0 ? effects[0].getDuration() : 100;
     }
@@ -25,30 +25,24 @@ public class DrugInjectable extends Item {
         ItemStack itemStack = user.getStackInHand(hand);
         
         if (!world.isClient()) {
-            // Check if player has empty syringe
-            if (hasEmptySyringeInInventory(user)) {
-                // Apply drug effects
-                for (StatusEffectInstance effect : effects) {
-                    user.addStatusEffect(new StatusEffectInstance(effect));
-                }
-                
-                // Consume the syringe
-                itemStack.decrement(1);
-                
-                return TypedActionResult.success(itemStack);
+            // Apply drug effects
+            for (StatusEffectInstance effect : effects) {
+                user.addStatusEffect(new StatusEffectInstance(effect));
             }
+            
+            // Consume the drug syringe
+            itemStack.decrement(1);
+            
+            // Give back empty syringe
+            ItemStack returnSyringe = new ItemStack(ItemRegistry.ITEM_EMPTY_SYRINGE);
+            if (!user.getInventory().insertStack(returnSyringe)) {
+                // If inventory is full, drop it
+                user.dropItem(returnSyringe, false);
+            }
+            
+            return TypedActionResult.success(itemStack);
         }
         
         return TypedActionResult.fail(itemStack);
-    }
-
-    private boolean hasEmptySyringeInInventory(PlayerEntity player) {
-        for (int i = 0; i < player.getInventory().size(); i++) {
-            ItemStack stack = player.getInventory().getStack(i);
-            if (!stack.isEmpty() && stack.getItem() == ItemRegistry.ITEM_EMPTY_SYRINGE) {
-                return true;
-            }
-        }
-        return false;
     }
 }

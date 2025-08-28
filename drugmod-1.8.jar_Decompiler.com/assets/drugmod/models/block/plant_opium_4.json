@@ -1,6 +1,0 @@
-{
-    "parent": "block/crop",
-    "textures": {
-        "crop": "drugmod:blocks/plant_opium_4"
-    }
-}
