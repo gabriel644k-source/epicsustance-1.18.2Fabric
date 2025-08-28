@@ -3,7 +3,8 @@
     "allow": [
       "Bash(.gradlew build)",
       "Bash(gradlew.bat build:*)",
-      "Bash(xcopy:*)"
+      "Bash(xcopy:*)",
+      "Bash(magick:*)"
     ],
     "deny": [],
     "ask": []

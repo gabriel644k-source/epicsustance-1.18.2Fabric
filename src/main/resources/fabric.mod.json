@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.g2806.epicsustance.Epicsustance"
+		],
+		"client": [
+			"com.g2806.epicsustance.EpicsustanceClient"
 		]
 	},
 	"mixins": [
