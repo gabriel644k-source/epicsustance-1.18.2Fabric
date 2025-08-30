@@ -9,7 +9,7 @@
 	],
 
 	"license": "MIT",
-	"icon": "assets/epicsustance/icon.png",
+	"icon": "assets/epicsustance/textures/item/item_weed.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
