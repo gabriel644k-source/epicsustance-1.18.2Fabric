@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "epicsustance:drug_weed"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result":
+  {
+    "item": "epicsustance:item_joint",
+    "count": 1
+  }
+}

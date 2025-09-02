@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+  	" M ",
+    "MEM",
+    " M "
+  ],
+  "key":
+  {
+    "M":
+    {
+      "item": "epicsustance:item_morphine_syringe"
+    },
+    "E":
+    {
+      "item": "epicsustance:item_empty_syringe"
+    }
+  },
+  "result":
+  {
+    "item": "epicsustance:item_heroin_syringe",
+    "count": 1
+  }
+}

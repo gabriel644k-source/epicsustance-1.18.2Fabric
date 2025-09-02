@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "epicsustance:item_grinder"
+    },
+    {
+      "item": "epicsustance:item_cocaine"
+    }
+  ],
+  "result":
+  {
+    "item": "epicsustance:drug_cocaine",
+    "count": 1
+  }
+}

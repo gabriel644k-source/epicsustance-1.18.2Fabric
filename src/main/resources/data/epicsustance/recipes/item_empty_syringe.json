@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+  	"I",
+    "G",
+    "I"
+  ],
+  "key":
+  {
+    "G":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "epicsustance:item_empty_syringe",
+    "count": 1
+  }
+}

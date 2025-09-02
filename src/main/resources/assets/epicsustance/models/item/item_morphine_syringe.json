@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "epicsustance:item/item_morphine_syringe"
+  }
+}

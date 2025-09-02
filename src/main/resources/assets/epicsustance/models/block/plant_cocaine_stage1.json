@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "epicsustance:block/plant_cocaine_2"
+  }
+}

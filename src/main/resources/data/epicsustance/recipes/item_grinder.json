@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "epicsustance:item_mortar"
+    },
+    {
+      "item": "epicsustance:item_pestle"
+    }
+  ],
+  "result":
+  {
+    "item": "epicsustance:item_grinder",
+    "count": 1
+  }
+}

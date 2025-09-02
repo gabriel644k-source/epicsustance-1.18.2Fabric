@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "epicsustance:food_chocolate_ball"
+    },
+    {
+      "item": "epicsustance:drug_weed"
+    }
+  ],
+  "result":
+  {
+    "item": "epicsustance:drug_chocolate_ball",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "item": "epicsustance:item_grinder"
+    },
+    {
+      "item": "epicsustance:item_opium"
+    }
+  ],
+  "result":
+  {
+    "item": "epicsustance:drug_opium",
+    "count": 1
+  }
+}

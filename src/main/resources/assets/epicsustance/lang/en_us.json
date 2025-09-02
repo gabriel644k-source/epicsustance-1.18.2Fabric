@@ -1,0 +1,48 @@
+{
+  "itemGroup.epicsustance": "EpicSustance",
+  
+  "item.epicsustance.item_pestle": "Pestle",
+  "item.epicsustance.item_mortar": "Mortar",
+  "item.epicsustance.item_grinder": "Grinder",
+  "item.epicsustance.item_empty_syringe": "Empty Syringe",
+  "item.epicsustance.item_morphine_syringe": "Morphine Syringe",
+  "item.epicsustance.item_heroin_syringe": "Heroin Syringe",
+  
+  "item.epicsustance.seed_weed": "Weed Seeds",
+  "item.epicsustance.seed_cocaine": "Cocaine Seeds",
+  "item.epicsustance.seed_tobacco": "Tobacco Seeds", 
+  "item.epicsustance.seed_opium": "Opium Seeds",
+  
+  "item.epicsustance.item_weed": "Raw Weed",
+  "item.epicsustance.item_cocaine": "Raw Cocaine",
+  "item.epicsustance.item_tobacco": "Raw Tobacco",
+  "item.epicsustance.item_opium": "Raw Opium",
+  
+  "item.epicsustance.drug_weed": "Processed Weed",
+  "item.epicsustance.drug_cocaine": "Processed Cocaine", 
+  "item.epicsustance.drug_tobacco": "Processed Tobacco",
+  "item.epicsustance.drug_opium": "Processed Opium",
+  
+  "item.epicsustance.food_chocolate_chip": "Chocolate Chip",
+  "item.epicsustance.food_chocolate_ball": "Chocolate Ball",
+  "item.epicsustance.drug_chocolate_ball": "Weed Infused Chocolate Ball",
+  "item.epicsustance.food_muffin": "Muffin",
+  "item.epicsustance.drug_muffin": "Weed Infused Muffin",
+  "item.epicsustance.food_brownie": "Brownie", 
+  "item.epicsustance.drug_brownie": "Cocaine Infused Brownie",
+  
+  "item.epicsustance.item_joint": "Joint",
+  "item.epicsustance.item_blunt": "Blunt",
+  "item.epicsustance.item_spliff": "Spliff",
+  "item.epicsustance.item_heroin_joint": "Heroin Joint",
+  "item.epicsustance.item_straw": "Straw",
+  "item.epicsustance.item_pipe_tobacco": "Tobacco Pipe",
+  "item.epicsustance.item_pipe_opium": "Opium Pipe",
+  "item.epicsustance.dope_helmet": "Dope Helmet",
+  
+  "block.epicsustance.plant_weed": "Weed Plant",
+  "block.epicsustance.plant_cocaine": "Cocaine Plant", 
+  "block.epicsustance.plant_tobacco": "Tobacco Plant",
+  "block.epicsustance.plant_opium": "Opium Plant",
+  "block.epicsustance.drug_farmer": "Drug Farmer"
+}
