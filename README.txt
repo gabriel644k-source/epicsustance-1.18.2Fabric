@@ -1,46 +1,47 @@
+# Epic Sustance - Minecraft Mod
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+**Version:** 1.0.0  
+**Minecraft Version:** 1.18.2  
+**Mod Loader:** Forge  
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+## Description
 
-Setup Process:
-==============================
+Epic Sustance is a Update Forge port of the original DrugMod for Minecraft 1.12.2 Forge. This mod adds various plant-based substances and related items to Minecraft, including different types of plants that can be grown and processed.
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+## Features
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
+- **Plant Growing System:** Grow various plants including:
+  - Weed Plants
+  - Tobacco Plants  
+  - Cocaine Plants
+  - Opium Plants
+- **Item Processing:** Process grown plants into various consumable items
+- **Armor System:** Special armor materials related to mod content
+- **Block System:** Custom blocks for plant growing and processing
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
+## Original Mod Permission
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+This mod is a recreation/port of an original mod. The original creator has given explicit permission for this recreation and has specifically stated that **no credit is required**.
 
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
+### Evidence of Permission:
 
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/1.18.x/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+**Message 1:** The original creator stated:
+> "It was removed from curseforge due to not being appropriate for all users, they probably wouldn't allow it to be reuploaded. Feel free to do whatever with it though, i don't work on that mod anymore and have no plans to do anything with it, nor do I have the files anymore"
+
+**Message 2:** When asked about crediting, the creator responded:
+> "go for it then, you don't need to credit me"
+
+## Legal
+
+- **License:** MIT License
+- **Permission:** Explicit permission granted by original mod creator
+- **No Attribution Required:** As per creator's explicit statement
+
+## Author
+
+- **Current Port:** Gabrieli2806
+- **Original Concept:** Used with permission (no credit required as per original author)
+
+## Disclaimer
+
+This mod is intended for mature audiences and fictional gameplay only. It does not promote or endorse any real-world activities.
